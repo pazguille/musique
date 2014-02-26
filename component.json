@@ -1,0 +1,22 @@
+{
+  "name": "musique",
+  "repo": "pazguille/musique",
+  "description": "A JavaScript Music Player API without UI.",
+  "version": "1.0.0",
+  "author": "Guille Paz <guille87paz@gmail.com>",
+  "twitter": "@pazguille",
+  "keywords": [
+    "music",
+    "player",
+    "audio",
+    "api",
+    "sound"
+  ],
+  "dependencies": {},
+  "development": {
+    "bestander/jasmine": "*"
+  },
+  "license": "MIT",
+  "main": "dist/musique.js",
+  "scripts": ["dist/musique.js"]
+}
