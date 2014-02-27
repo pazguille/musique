@@ -66,8 +66,7 @@ module.exports = function (grunt) {
         'jasmine': {
             'src': ['dist/<%= pkg.name %>.js'],
             'options': {
-                'specs': ['test/spec.js'],
-                'version': '1.3.1'
+                'specs': ['test/spec.js']
             }
         }
     });
