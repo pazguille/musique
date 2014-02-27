@@ -55,13 +55,15 @@
 
         this.playlist = this._options.playlist;
 
-        this.setTrack(this.playlist[this._indexTrack]);
+        this.setTrack(this._indexTrack);
 
         this._defineEvents();
 
         if (this._options.autoplay) {
             this._player.play();
         }
+
+        this._playing = false;
 
         return this;
     };
@@ -72,10 +74,12 @@
      * @function
      * @returns {musique}
      */
-    Musique.prototype.play = function (track) {
-        if (track) {
-            this.setTrack(track);
+    Musique.prototype.play = function (indexTrack) {
+        if (indexTrack) {
+            this.setTrack(indexTrack);
         }
+
+        this._playing = true;
 
         this._player.play();
 
@@ -88,10 +92,12 @@
      * @function
      * @returns {musique}
      */
-    Musique.prototype.setTrack = function (track) {
+    Musique.prototype.setTrack = function (indexTrack) {
+        this._indexTrack = indexTrack;
 
-        this.currentTrack = track;
-        this._player.src = track.src;
+        this.currentTrack = this.playlist[this._indexTrack];
+
+        this._player.src = this.currentTrack.src;
 
         return this;
     };
@@ -103,6 +109,8 @@
      * @returns {musique}
      */
     Musique.prototype.pause = function () {
+        this._playing = false;
+
         this._player.pause();
 
         return this;
@@ -117,7 +125,7 @@
     Musique.prototype.stop = function () {
         if (this._player.currentTime) {
             this._player.currentTime = 0;
-            this._player.pause();
+            this.pause();
         }
 
         return this;
@@ -136,10 +144,9 @@
             return this;
         }
 
-        this._indexTrack = index;
-        this.setTrack(this.playlist[this._indexTrack]);
+        this.setTrack(index);
 
-        if (!this._player.paused) {
+        if (this._playing) {
             this.play();
         }
 
@@ -159,10 +166,9 @@
             return this;
         }
 
-        this._indexTrack = index;
-        this.setTrack(this.playlist[this._indexTrack]);
+        this.setTrack(index);
 
-        if (!this._player.paused) {
+        if (this._playing) {
             this.play();
         }
 
@@ -209,7 +215,7 @@
     };
 
     /**
-     * Toggles between pause and play..
+     * Toggles between pause and play.
      * @memberof! Musique.prototype
      * @function
      * @returns {musique}

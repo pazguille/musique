@@ -209,7 +209,7 @@
     };
 
     /**
-     * Toggles between pause and play..
+     * Toggles between pause and play.
      * @memberof! Musique.prototype
      * @function
      * @returns {musique}
