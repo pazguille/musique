@@ -45,7 +45,7 @@
 
         this._options = customizeOptions(options || {});
 
-        this._player = new window.Audio();
+        this._player = window.document.createElement('audio');
 
         this._muted = this._options.muted;
 
