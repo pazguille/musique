@@ -13,9 +13,7 @@
     "sound"
   ],
   "dependencies": {},
-  "development": {
-    "bestander/jasmine": "*"
-  },
+  "development": {},
   "license": "MIT",
   "main": "dist/musique.js",
   "scripts": ["dist/musique.js"]
