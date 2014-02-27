@@ -20,14 +20,14 @@ var musique = new Musique({
         'title': 'Title Track 01',
         'artist': 'Artist Track 01',
         'album': 'Album Track 01',
-        'poster': '#https://foo.com/track01.jpg',
+        'poster': 'https://foo.com/track01.jpg',
         'src': 'https://foo.com/track01.mp3'
     },
     {
         'title': 'Title Track 02',
         'artist': 'Artist Track 02',
         'album': 'Album Track 02',
-        'poster': '#https://foo.com/track02.jpg',
+        'poster': 'https://foo.com/track02.jpg',
         'src': 'https://foo.com/track02.mp3'
     }]
 });
