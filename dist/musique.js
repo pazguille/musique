@@ -28,6 +28,12 @@
     /**
      * Creates a new instance of Musique.
      * @constructor
+     * @param {Object} [options] Options to customize an instance.
+     * @param {String} [options.volume] Set the volumen as a value from 0 to 100. Default: 50.
+     * @param {String} [options.indexTrack] A given number of the initial track. Default: 0.
+     * @param {String} [options.muted] Set if the instance starts muted. Default: false.
+     * @param {String} [options.playlist] Define a collection of tracks. Default: [].
+     * @param {String} [options.autoplay] Set if the instance starts playing automatically. Default: false.
      * @returns {musique}
      */
     function Musique(options) {
