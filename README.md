@@ -3,10 +3,43 @@
 > A JavaScript Music Player API without UI.
 
 ## How-to
-[TODO]
+
+### Add musique.js into your HTML file.
+You should download the library and reference the JavaScript file using a `<script>` tag somewhere on your HTML pages.
+```html
+<script src="musique.min.js"></script>
+```
+
+### Create a new instance of Musique.
+Once added the library you can create a new instance of Musique with an optinal configuration and a playlist.
+```js
+var musique = new Musique({
+    'volume': 75,
+    'autoplay': true,
+    'playlist': [{
+        'title': 'Title Track 01',
+        'artist': 'Artist Track 01',
+        'album': 'Album Track 01',
+        'poster': '#https://foo.com/track01.jpg',
+        'src': 'https://foo.com/track01.mp3'
+    },
+    {
+        'title': 'Title Track 02',
+        'artist': 'Artist Track 02',
+        'album': 'Album Track 02',
+        'poster': '#https://foo.com/track02.jpg',
+        'src': 'https://foo.com/track02.mp3'
+    }]
+});
+```
+
+### Create and Enjoy!
+Now, you can use the API to create awesome music players.
+```js
+musique.next();
+```
 
 ## API
-[WIP]
 
 ### Table of contents
 
