@@ -1,6 +1,6 @@
 # musique.js [![Build Status](https://secure.travis-ci.org/pazguille/musique.png)](http://travis-ci.org/pazguille/musique) [![devDependency Status](https://david-dm.org/pazguille/musique/dev-status.png)](https://david-dm.org/pazguille/musique#info=devDependencies)
 
-> A JavaScript Music Player API without UI.
+> A JavaScript Music Player API to create custom players.
 
 ## How-to
 

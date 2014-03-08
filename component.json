@@ -1,7 +1,7 @@
 {
   "name": "musique",
   "repo": "pazguille/musique",
-  "description": "A JavaScript Music Player API without UI.",
+  "description": "A JavaScript Music Player API to create custom players.",
   "version": "1.0.0",
   "author": "Guille Paz <guille87paz@gmail.com>",
   "twitter": "@pazguille",

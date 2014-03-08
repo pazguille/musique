@@ -1,7 +1,7 @@
 {
   "name": "musique",
   "version": "1.0.0",
-  "description": "A JavaScript Music Player API without UI",
+  "description": "A JavaScript Music Player API to create custom players.",
   "author": "@pazguille <guille87paz@gmail.com>",
   "contributors": [{
     "name": "Guille Paz",
