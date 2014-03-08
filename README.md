@@ -43,17 +43,17 @@ musique.next();
 
 ### Table of contents
 
-- [Musique()](#)
-- [Musique#play()](#)
-- [Musique#setTrack()](#)
-- [Musique#pause()](#)
-- [Musique#stop()](#)
-- [Musique#next()](#)
-- [Musique#prev()](#)
-- [Musique#volume()](#)
-- [Musique#mute()](#)
-- [Musique#reset()](#)
-- [Musique#toggle()](#)
+- [Musique()](#musiqueoptions)
+- [Musique#play()](#musiqueplayindextrack)
+- [Musique#setTrack()](#musiquesettrackindextrack)
+- [Musique#pause()](#musiquepause)
+- [Musique#stop()](#musiquestop)
+- [Musique#next()](#musiquenext)
+- [Musique#prev()](#musiqueprev)
+- [Musique#volume()](#musiquevolumevalue)
+- [Musique#mute()](#musiquemute)
+- [Musique#reset()](#musiquereset)
+- [Musique#toggle()](#musiquetoggle)
 
 ### Musique(options)
 Creates a new instance of `Musique`.
