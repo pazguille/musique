@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Musique JS Component</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="prism.css">
+
+        <style>
+            body {
+                font-family: "Helvetica Neue", Helvetica, Arial, serif;
+                margin: 0;
+            }
+
+            header {
+                background: #000 url('musique.jpg') no-repeat center -200px fixed;
+                background-size: cover;
+                color: #FFF;
+                text-align: center;
+            }
+
+            header div {
+                background-color: rgba(0,0,0,.5);
+                padding: 150px 0;
+            }
+
+            a {
+                color: #E74C3C;
+            }
+
+            h1 {
+                font-size: 10em;
+                line-height: 1em;
+                color: #FFF;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .subtitle {
+                font-size: 2.5em;
+                width: 60%;
+                margin: 50px auto;
+                padding: 20px;
+                text-align: center;
+            }
+
+
+            .btn {
+                width: auto;
+                padding: 15px 30px;
+                font-size: 20px;
+                color: #563D7C !important;
+                background-color: #fff;
+                text-decoration: none;
+                border-radius: 6px;
+                display: inline-block;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            footer {
+                margin: 30px auto;
+                text-align: center;
+            }
+
+            .heart {
+                font-style: normal;
+                font-weight: 500;
+                color: #c0392b;
+                text-decoration: none;
+            }
+
+            #twitter {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            #github-button {
+                display: block;
+                margin: 30px auto 0;
+                position: relative;
+                left: 40px;
+            }
+
+            #github-ribbon {
+                display: inline-block;
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 100;
+                border: 0;
+                width: 149px;
+                height: 149px;
+            }
+
+            .github-buttons {
+                text-align: center;
+                margin: 1em 0;
+            }
+
+            .box {
+                display: inline-block;
+                margin: 15px;
+                width: 28%;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+                font-size: 25px;
+                color: #fff;
+                border: 1px solid #bbb;
+            }
+
+            section {
+                margin: 0 20px 50px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>musique.js</h1>
+                <h2 class="subtitle">A JavaScript Music Player API <br> to create custom players.</h2>
+                <a class="btn" href="https://github.com/pazguille/musique">View the Github Project</a>
+            </div>
+        </header>
+
+        <footer>
+            <iframe id="twitter" allowtransparency="true" frameborder="0" width="100" height="22" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?text=Musique.js%3A%20A%20JavaScript%20library%20to%20add%20voice%20commands%20to%20your%20site,%20apps%20or%20games.&amp;url=http%3A%2F%2Fpazguille.github.io%2Fmusique"></iframe>
+
+            <a href="https://github.com/pazguille/musique" id="github-ribbon"><img width="149" height="149" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+            by <a href="http://pazguille.me/">Guille Paz</a> with <a href="http://welovefrontend.org/" class="heart">❤</a>
+
+            <iframe id="github-button" src="http://ghbtns.com/github-btn.html?user=pazguille&repo=musique&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="152" height="30"></iframe>
+        </footer>
+
+        <script src="musique.min.js"></script>
+        <script src="prism.js"></script>
+        <script>
+        </script>
+    </body>
+</html>
