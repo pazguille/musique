@@ -125,7 +125,7 @@
     Musique.prototype.stop = function () {
         this._playing = false;
 
-        this._player.stop();
+        this._player.load();
 
         return this;
     };
