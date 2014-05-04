@@ -129,10 +129,9 @@
      * @returns {musique}
      */
     Musique.prototype.stop = function () {
-        if (this._player.currentTime) {
-            this._player.currentTime = 0;
-            this.pause();
-        }
+        this._playing = false;
+
+        this._player.load();
 
         return this;
     };
