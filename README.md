@@ -162,3 +162,8 @@ musique.toggle();
 Licensed under the MIT license.
 
 Copyright (c) 2014 [@pazguille](http://twitter.com/pazguille).
+
+
+
+-> a decent resuorce for the project cna be https://www.youtube.com/watch?v=kWSXcRUmnt4
+One can learn from basics here.
